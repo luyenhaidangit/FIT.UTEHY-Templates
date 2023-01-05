@@ -1,0 +1,24 @@
+.statistical__card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.statistical__item {
+    min-width: 25%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 80%;
+    padding: 0 48px;
+}
+
+.table-data {
+    max-width: 80%;
+}

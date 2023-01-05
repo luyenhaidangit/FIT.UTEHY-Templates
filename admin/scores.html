@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý điểm số - FIT.UTEHY</title>
+    <!-- ico -->
+    <link rel="shortcut icon" href="../assets/image/logo/logo-fit.png" type="image/x-icon">
+    <!-- font -->
+    <link rel="stylesheet" href="../assets/font/font-awesome-pro-5/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/global/reset.css">
+    <link rel="stylesheet" href="../assets/css/global/public.css">
+    <link rel="stylesheet" href="../assets/css/global/public-admin.css">
+    <link rel="stylesheet" href="../assets/css/local/admin-manager/scores.css">
+    <!-- js -->
+    <script src="../assets/js/global/jquery-3.6.0.js"></script>
+    <script src="../assets/js/global/validate.js"></script>
+    <script src="../assets/js/local/admin-manager/scores.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- begin: header -->
+        <header class="header">
+            <div class="navbar__header">
+                <div class="navbar__container">
+                    <!-- brand -->
+                    <div class="navbar__brand">
+                        <a class="navbar__brand-logo" href="../index.html">
+                            <img class="img-cover-center" src="../assets/image/logo/logo-fit.png" alt="logo-it-utehy">
+                        </a>
+
+                        <a class="navigation__brand-title" href="../index.html">
+                            <h1>FIT.UTEHY</h1>
+                        </a>
+                    </div>
+
+                    <!-- collapse leftbar icon -->
+                    <button type="button" class="btn navbar__btn waves-effect">
+                        <i class="far fa-align-left"></i>
+                    </button>
+
+                    <!-- search form-->
+                    <form class="navbar__search">
+                        <div class="navbar__search-wrap">
+                            <input type="text" class="navbar__search-input" placeholder="Tìm kiếm...">
+                            <span class="navbar__search-icon">
+                                <i class="far fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="navbar__container">
+                    <!-- navbar__dropdown -->
+                    <div class="navbar__dropdown">
+                        <button type="button" class="btn navbar__btn waves-effect navbar__dropdown-btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="" src="../assets/image/country/local.png" alt="Header Language">
+                        </button>
+                    </div>
+
+                    <div class="navbar__dropdown">
+                        <button type="button" class="btn waves-effect navbar__dropdown-btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="navbar__dropdown">
+                        <button type="button" class="btn waves-effect navbar__dropdown-btn user-avatar" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-cover-center" src="../assets/image/user/user1.jpg" alt="Header Avatar">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end: header -->
+
+        <!-- begin: leftbar -->
+        <div class="leftbar__wrap">
+            <ul class="leftbar scroll-vertical" id="side-menu">
+                <li class="leftbar__title">Menu</li>
+
+                <li class="leftbar__item">
+                    <a href="dashboard.html">
+                        <i class="fas fa-chart-pie-alt"></i>
+                        <p>Tổng quản</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="training.html">
+                        <i class="far fa-city"></i>
+                        <p>Quản lý chuyên ngành</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="generation.html">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>Quản lý hệ đào tạo</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="class.html">
+                        <i class="far fa-users-class"></i>
+                        <p>Quản lý lớp học</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <p>Quản lý sinh viên</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="teacher.html">
+                        <i class="fad fa-chalkboard-teacher"></i>
+                        <p>Quản lý giáo viên</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="subject.html">
+                        <i class="far fa-calculator-alt"></i>
+                        <p>Quản lý môn học</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="schedule.html">
+                        <i class="far fa-calendar-alt"></i>
+                        <p>Quản lý lịch học</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item active">
+                    <a href="#">
+                        <i class="fas fa-book-open"></i>
+                        <p>Quản lý điểm thi</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="statistical.html">
+                        <i class="far fa-chart-line"></i>
+                        <p>Thống kê, báo cáo</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__title">Người dùng</li>
+
+                <li class="leftbar__item">
+                    <a href="user.html">
+                        <i class="fas fa-book-open"></i>
+                        <p>Quản lý người dùng</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end: leftbar -->
+
+        <!-- begin: content -->
+        <div class="main-content">
+            <div class="page__title">
+                <h4>QUẢN LÝ ĐIỂM SỐ</h4>
+            </div>
+
+            <section class="firts-section">
+                <div class="training">
+                    <div class="table__card">
+                        <div class="manager__container">
+                            <div class="add__btn">
+                                <a href="#" class="btn btn--success"><i class="fal fa-plus"></i>Thêm điểm số</a>
+                            </div>
+                        </div>
+
+                        <div class="manager__container control-data">
+                            <div class="select__data-lenght">
+                                <label>Hiển thị 
+                                    <select class="form-control">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select> bản ghi
+                                </label>
+                            </div>
+
+                            <div class="filter__data">
+                                <label>Tìm kiếm:<input type="search" class="form-control" placeholder="" aria-controls="DataTables_Table_0"></label>
+                            </div>
+                        </div>
+
+                        <div class="manager__container table-data">
+                            <table class="table table__data">
+                                <thead>
+                                    <tr class="table__data-tr">
+                                        <th class="table__data-th obj__idClass" rowspan="1" colspan="1">Lớp học</th>
+                                        <th class="table__data-th obj__num" rowspan="1" colspan="1">Kỳ học</th>
+                                        <th class="table__data-th obj__idSubject" rowspan="1" colspan="1">Môn học</th>
+                                        <th class="table__data-th obj__idTeacher" rowspan="1" colspan="1">Giáo Viên</th>
+                                        <th class="table__data-th obj__idTeacher" rowspan="1" colspan="1">Thao tác</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- end: content -->
+    </div>
+
+    <!-- begin: modal -->
+    <div class="manager__modal">
+        <div class="manager__modal-content">
+            <div class="manager__container modal__header">
+                <div class="manager__modal-title">
+                    <h5>Nhập Thông Tin Lịch Học</h5>
+                </div>
+
+                <div class="manager__modal-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__container modal__body">
+                <form class="form" action="#">
+                    <div class="form__item">
+                        <label class="form__label">Sinh viên</label>
+
+                        <div class="input__select input__select-student">
+                            <input type="text" class="form__input form__input-student" disabled>
+                            <div class="input__select-value form__input-select input__select-value__student"></div>
+                            <div class="input__select-icon">
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="input__list-option student__select">
+                                <div class="input__option"><span>Hoạt động</span></div>
+                                <div class="input__option"><span>Ngừng hoạt Động</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">Môn học</label>
+
+
+                        <div class="input__select input__select-subject">
+                            <input type="text" class="form__input form__input-subject" disabled>
+                            <div class="input__select-value form__input-select input__select-value__subject"></div>
+                            <div class="input__select-icon">
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="input__list-option subject__select">
+                                <div class="input__option"><span>Hoạt động</span></div>
+                                <div class="input__option"><span>Ngừng hoạt Động</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">Điểm QT</label>
+                        <input type="number" class="form__input form__input-mark1" placeholder="Nhập điểm QT">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label">Điểm KTHP</label>
+                        <input type="number" class="form__input form__input-mark2" placeholder="Nhập KTHP">
+                    </div>
+
+                    <button class="btn btn--primary btn--submit" type="submit">Xác nhận</button>
+                    <button class="btn btn--primary btn--update" type="submit" onclick="editScores()">Cập nhật</button>
+                </form>
+                <input class="get-index" type="hidden" value="">
+            </div>
+        </div>
+
+        <div class="manager__modal-alert">
+            <div class="manager__modal-alert__item alert--danger__case00">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Tên môn học không được để trống, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case04">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Số tín chỉ không được để trống, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case05">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Số tín chỉ chỉ từ 1 đến 12, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case09">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Điểm sinh viên chỉ từ 0 đến 10, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case10">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Sinh viên đã có điểm môn học, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case06">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Lớp học đã có lịch học môn học, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case07">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Kỳ học chỉ từ 1 đến 8, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__modal-alert__item alert--danger__case08">
+                <div class="alert__item-icon alert--danger">
+                    <i class="far fa-exclamation-circle"></i>
+                </div>
+                <div class="alert__item-content">
+                    <p>Kỳ học không được để trống, thử lại</p>
+                </div>
+                <div class="alert__item-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- end: modal -->
+
+    <!-- begin: alert -->
+    <div class="manager__alert">
+        <div class="manager__alert-content">
+            <div class="manager__container modal__header">
+                <div class="manager__modal-title">
+                    <h5>Nhập Thông Tin Giáo Viên</h5>
+                </div>
+
+                <div class="manager__modal-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="manager__container alert__body">
+                <h6>Bạn có chức muốn xóa thông tin điểm số của sinh viên có mã <span class="get-id-del">1160</span> với môn học có mã <span class="get-id-del1">abc</span> khỏi hệ thống?</h6>
+                <div class="alert__btn">
+                    <button class="btn btn--error btn__agree" type="submit" onclick="deleteSubject()">Xác nhận</button>
+                    <button class="btn btn--muted btn__skip" type="submit">Bỏ qua</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: alert -->
+</body>
+
+</html>

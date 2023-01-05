@@ -1,0 +1,21 @@
+.history {
+    padding: 16px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.history__content {
+    /* background: rgba( 155, 155, 155, 0.25); */
+    background-color: #f3f3f3;
+    backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 16px;
+}
+
+.history__timeline {
+    background: #212121;
+    display: flex;
+    justify-content: center;
+}

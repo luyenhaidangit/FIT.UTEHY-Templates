@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - FIT.UTEHY</title>
+    <!-- ico -->
+    <link rel="shortcut icon" href="../assets/image/logo/logo-fit.png" type="image/x-icon">
+    <!-- font -->
+    <link rel="stylesheet" href="../assets/font/font-awesome-pro-5/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/global/reset.css">
+    <link rel="stylesheet" href="../assets/css/global/public.css">
+    <link rel="stylesheet" href="../assets/css/global/public-admin.css">
+    <link rel="stylesheet" href="../assets/css/local/admin-manager/dashboard.css">
+    <!-- js -->
+    <script src="../assets/js/global/jquery-3.6.0.js"></script>
+    <script src="../assets/js/local/admin-manager/dashboard.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- begin: header -->
+        <header class="header">
+            <div class="navbar__header">
+                <div class="navbar__container">
+                    <!-- brand -->
+                    <div class="navbar__brand">
+                        <a class="navbar__brand-logo" href="../index.html">
+                            <img class="img-cover-center" src="../assets/image/logo/logo-fit.png" alt="logo-it-utehy">
+                        </a>
+
+                        <a class="navigation__brand-title" href="../index.html">
+                            <h1>FIT.UTEHY</h1>
+                        </a>
+                    </div>
+
+                    <!-- collapse leftbar icon -->
+                    <button type="button" class="btn navbar__btn waves-effect">
+                        <i class="far fa-align-left"></i>
+                    </button>
+
+                    <!-- search form-->
+                    <form class="navbar__search">
+                        <div class="navbar__search-wrap">
+                            <input type="text" class="navbar__search-input" placeholder="Tìm kiếm...">
+                            <span class="navbar__search-icon">
+                                <i class="far fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="navbar__container">
+                    <!-- navbar__dropdown -->
+                    <div class="navbar__dropdown">
+                        <button type="button" class="btn navbar__btn waves-effect navbar__dropdown-btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="" src="../assets/image/country/local.png" alt="Header Language">
+                        </button>
+                    </div>
+
+                    <div class="navbar__dropdown">
+                        <button type="button" class="btn waves-effect navbar__dropdown-btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="navbar__dropdown">
+                        <button type="button" class="btn waves-effect navbar__dropdown-btn user-avatar" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-cover-center" src="../assets/image/user/user1.jpg" alt="Header Avatar">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end: header -->
+
+        <!-- begin: leftbar -->
+        <div class="leftbar__wrap">
+            <!-- leftbar -->
+            <ul class="leftbar scroll-vertical" id="side-menu">
+                <li class="leftbar__title">Menu</li>
+
+                <li class="leftbar__item active">
+                    <a href="#">
+                        <i class="fas fa-chart-pie-alt"></i>
+                        <p>Tổng quản</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="training.html">
+                        <i class="far fa-city"></i>
+                        <p>Quản lý chuyên ngành</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="generation.html">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>Quản lý hệ đào tạo</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="class.html">
+                        <i class="far fa-users-class"></i>
+                        <p>Quản lý lớp học</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <p>Quản lý sinh viên</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="teacher.html">
+                        <i class="fad fa-chalkboard-teacher"></i>
+                        <p>Quản lý giáo viên</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="subject.html">
+                        <i class="far fa-calculator-alt"></i>
+                        <p>Quản lý môn học</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="schedule.html">
+                        <i class="far fa-calendar-alt"></i>
+                        <p>Quản lý lịch học</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="scores.html">
+                        <i class="fas fa-book-open"></i>
+                        <p>Quản lý điểm thi</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__item">
+                    <a href="statistical.html">
+                        <i class="far fa-chart-line"></i>
+                        <p>Thống kê, báo cáo</p>
+                    </a>
+                </li>
+
+                <li class="leftbar__title">Người dùng</li>
+
+                <li class="leftbar__item">
+                    <a href="user.html">
+                        <i class="fas fa-book-open"></i>
+                        <p>Quản lý người dùng</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end: leftbar -->
+
+        <!-- begin: content -->
+        <div class="main-content">
+            <div class="page__title">
+                <h4>Dashboard</h4>
+            </div>
+
+            <section class="firts-section">
+                <div class="report">
+                    <div class="report__card report__box">
+                        <div class="report__box-header">
+                            <div class="report__container">
+                                <p class="report__title--normal">Số lớp học</p>
+                                <h5 id="numberClass" class="report__data">28</h5>
+                            </div>
+
+                            <div class="report__icon">
+                                <i class="far fa-users-class"></i>
+                            </div>
+                        </div>
+
+                        <div class="report__box-bottom">
+                            <div class="report__box-index">
+                                <i class="fas fa-caret-up">5%</i>
+                            </div>
+                            <div class="report__box-time">
+                                <p>kể từ lần cuối cập nhật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report__card report__box">
+                        <div class="report__box-header">
+                            <div class="report__container">
+                                <p class="report__title--normal">Số sinh viên</p>
+                                <h5 id="numberStudent" class="report__data">23</h5>
+                            </div>
+
+                            <div class="report__icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                        </div>
+
+                        <div class="report__box-bottom">
+                            <div class="report__box-index">
+                                <i class="fas fa-caret-up">5%</i>
+                            </div>
+                            <div class="report__box-time">
+                                <p>kể từ lần cuối cập nhật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report__card report__box">
+                        <div class="report__box-header">
+                            <div class="report__container">
+                                <p class="report__title--normal">Số giảng viên</p>
+                                <h5 id="numberTeacher" class="report__data">12</h5>
+                            </div>
+
+                            <div class="report__icon">
+                                <i class="fad fa-chalkboard-teacher"></i>
+                            </div>
+                        </div>
+
+                        <div class="report__box-bottom">
+                            <div class="report__box-index">
+                                <i class="fas fa-caret-up">5%</i>
+                            </div>
+                            <div class="report__box-time">
+                                <p>kể từ lần cuối cập nhật</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report__card report__chart--pie report__specialized">
+                        <div class="report__chart--pie-header">
+                            <div class="report__container">
+                                <p class="report__title--bold">Thống kê chuyên ngành</p>
+                            </div>
+
+                            <div class="report__icon">
+                                <i class="far fa-city"></i>
+                            </div>
+                        </div>
+
+                        <div class="report__chart--pie-body">
+                            <div class="report__chart--pie-show">
+
+                            </div>
+                        </div>
+
+                        <div class="report__chart--pie-bottom">
+                            <div class="report__chart--pie-item">
+                                <div class="report__chart--pie-title">
+                                    <div class="report__chart--pie-dots"></div>
+                                    <p>CNW</p>
+                                </div>
+
+                                <div class="report__chart--pie-parameter">
+                                    <h5>33%</h5>
+                                </div>
+                            </div>
+
+                            <div class="report__chart--pie-item">
+                                <div class="report__chart--pie-title">
+                                    <div class="report__chart--pie-dots"></div>
+                                    <p>CNDD</p>
+                                </div>
+
+                                <div class="report__chart--pie-parameter">
+                                    <h5>33%</h5>
+                                </div>
+                            </div>
+
+                            <div class="report__chart--pie-item">
+                                <div class="report__chart--pie-title">
+                                    <div class="report__chart--pie-dots"></div>
+                                    <p>KTPM</p>
+                                </div>
+                                <div class="report__chart--pie-parameter">
+                                    <h5>34%</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report__card report__chart--pie report__system">
+                        <div class="report__chart--pie-header">
+                            <div class="report__container">
+                                <p class="report__title--bold">Tình trạng hệ thống</p>
+                            </div>
+
+                            <div class="report__icon">
+                                <i class="far fa-server"></i>
+                            </div>
+                        </div>
+
+                        <div class="report__chart--pie-body">
+                            <div class=".report__chart--pie-item">
+                                <div class="report__chart--pie-show">
+                                    <svg id="SvgjsSvg1130" width="165" height="61" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)"
+                                        style="background: transparent;"><g id="SvgjsG1132" class="apexcharts-inner apexcharts-graphical" transform="translate(52.5, 0)"><defs id="SvgjsDefs1131"><clipPath id="gridRectMask0runaavn"><rect id="SvgjsRect1134" width="66" height="62" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask0runaavn"><rect id="SvgjsRect1135" width="64" height="64" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1136" class="apexcharts-radialbar"><g id="SvgjsG1137"><g id="SvgjsG1138" class="apexcharts-tracks"><g id="SvgjsG1139" class="apexcharts-radialbar-track apexcharts-track" rel="1"><path id="apexcharts-radialbarTrack-0" d="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 29.9960410824485 7.317073516212435" fill="none" fill-opacity="1" stroke="rgba(242,242,242,0.85)" stroke-opacity="1" stroke-linecap="round" stroke-width="4.258536585365854" stroke-dasharray="0" class="apexcharts-radialbar-area" data:pathOrig="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 29.9960410824485 7.317073516212435"></path></g></g><g id="SvgjsG1141"><g id="SvgjsG1143" class="apexcharts-series apexcharts-radial-series" seriesName="seriesx1" rel="1" data:realIndex="0"><path id="SvgjsPath1144" d="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 7.733822424235914 34.32810648049236" fill="none" fill-opacity="0.85" stroke="rgba(86,100,210,0.85)" stroke-opacity="1" stroke-linecap="round" stroke-width="4.390243902439025" stroke-dasharray="0" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="259" data:value="72" index="0" j="0" data:pathOrig="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 7.733822424235914 34.32810648049236"></path></g><circle id="SvgjsCircle1142" r="20.553658536585367" cx="30" cy="30" class="apexcharts-radialbar-hollow" fill="transparent"></circle></g></g></g></g><g id="SvgjsG1133" class="apexcharts-annotations"></g></svg>
+                                </div>
+
+                                <div class="report__title--bold text-center">
+                                    <h4>CPU</h4>
+                                </div>
+
+                            </div>
+
+                            <div class=".report__chart--pie-item">
+                                <div class="report__chart--pie-show">
+                                    <svg id="SvgjsSvg1147" width="165" height="61" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)"
+                                        style="background: transparent;"><g id="SvgjsG1149" class="apexcharts-inner apexcharts-graphical" transform="translate(52.5, 0)"><defs id="SvgjsDefs1148"><clipPath id="gridRectMask8jx6q02i"><rect id="SvgjsRect1151" width="66" height="62" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask8jx6q02i"><rect id="SvgjsRect1152" width="64" height="64" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1153" class="apexcharts-radialbar"><g id="SvgjsG1154"><g id="SvgjsG1155" class="apexcharts-tracks"><g id="SvgjsG1156" class="apexcharts-radialbar-track apexcharts-track" rel="1"><path id="apexcharts-radialbarTrack-0" d="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 29.9960410824485 7.317073516212435" fill="none" fill-opacity="1" stroke="rgba(242,242,242,0.85)" stroke-opacity="1" stroke-linecap="round" stroke-width="4.258536585365854" stroke-dasharray="0" class="apexcharts-radialbar-area" data:pathOrig="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 29.9960410824485 7.317073516212435"></path></g></g><g id="SvgjsG1158"><g id="SvgjsG1160" class="apexcharts-series apexcharts-radial-series" seriesName="seriesx1" rel="1" data:realIndex="0"><path id="SvgjsPath1161" d="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 11.649126712958513 43.33268986907318" fill="none" fill-opacity="0.85" stroke="rgba(28,187,140,0.85)" stroke-opacity="1" stroke-linecap="round" stroke-width="4.390243902439025" stroke-dasharray="0" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="234" data:value="65" index="0" j="0" data:pathOrig="M 30 7.317073170731707 A 22.682926829268293 22.682926829268293 0 1 1 11.649126712958513 43.33268986907318"></path></g><circle id="SvgjsCircle1159" r="20.553658536585367" cx="30" cy="30" class="apexcharts-radialbar-hollow" fill="transparent"></circle></g></g></g></g><g id="SvgjsG1150" class="apexcharts-annotations"></g></svg>
+                                </div>
+
+                                <div class="report__title--bold text-center">
+                                    <h4>RAM</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report__card report__chart--column">
+                        <div class="report__chart--column-header">
+                            <div class="report__chart--column-content">
+                                <p class="report__title--bold">Tình trạng sinh viên</p>
+                            </div>
+
+                            <div class="report__icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                        </div>
+
+                        <div class="report__chart--column-body">
+                            <div class="chart__list-column">
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2010</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2011</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2012</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2013</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2014</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2015</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2016</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2017</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2018</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2019</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2020</div>
+                                </div>
+                                <div class="chart__column">
+                                    <div class="chart__column-index-bottom">2021</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart__list-index-left">
+                            <div class="chart__column-index-left">2000</div>
+                            <div class="chart__column-index-left">1800</div>
+                            <div class="chart__column-index-left">1600</div>
+                            <div class="chart__column-index-left">1400</div>
+                            <div class="chart__column-index-left">1200</div>
+                            <div class="chart__column-index-left">1000</div>
+                            <div class="chart__column-index-left">800</div>
+                            <div class="chart__column-index-left">600</div>
+                            <div class="chart__column-index-left">400</div>
+                            <div class="chart__column-index-left">200</div>
+                            <div class="chart__column-index-left">0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- end: content -->
+    </div>
+</body>
+
+</html>

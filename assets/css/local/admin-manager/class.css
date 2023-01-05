@@ -1,0 +1,12 @@
+.manager__modal-content {
+    position: absolute;
+    top: 120px;
+    width: 90%;
+    height: 100%;
+    max-width: 720px;
+    max-height: 440px;
+    background-color: #ffff;
+    border-radius: 12px;
+    padding: 24px 32px;
+    z-index: 10;
+}
